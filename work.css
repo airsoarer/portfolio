@@ -1,5 +1,6 @@
 body{
     width: 100%;
+    font-size: 20px;
 }
 
 #textBlock{
@@ -28,4 +29,14 @@ img{
 hr{
     height: 5px;
     background-color: gray;
+}
+
+.card{
+    background-color: #5b5b5b !important;
+    color: white;
+    display:inline-flex;
+    margin: 15px !important;
+    padding: 5px;
+    width: 10%;
+    height: 25px;
 }
