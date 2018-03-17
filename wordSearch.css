@@ -1,0 +1,32 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    margin-top: 0px !important;
+    margin-left: 5px !important;
+    padding: 0px;
+}
+
+h4{
+    margin-top: 0px !important;
+}
+
+.topStuff{
+    background-color: navy;
+    color:white;
+    margin-left: 0px;
+}
+
+.word{
+    text-transform: uppercase;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+h4:hover{
+    color: #5b5b5b;
+    transition: 1s;
+}
