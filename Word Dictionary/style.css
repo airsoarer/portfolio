@@ -1,0 +1,16 @@
+body{
+    background-image: url("http://www.90minds.com/wp-content/uploads/2015/06/dictionary.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+}
+
+button{
+    border:none;
+    background-color: black;
+    height: 40px;
+}
+
+.centerInput{
+    margin: 100px;
+}
