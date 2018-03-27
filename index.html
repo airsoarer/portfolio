@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link href="RPS.css" rel="stylesheet">
-	<script
-  	src="https://code.jquery.com/jquery-3.2.1.min.js"
-  	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  	crossorigin="anonymous"></script>
-	<script src="./RPS.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>The Word Dictionary</title>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </head>
 <body>
-	<div id="container">
-		<h1>Rock, Paper Sicssors</h1>
-		<h2>The classic game that settles differences</h1>
-
-		<div id="play">
-			<div id="player">
-
-			</div>
-			<div id="computer">
-
-			</div>
-			<div id="verdict">
-
-			</div>
-		</div>		
-		<div id="chocie">
-			<h2>Choose your throw...</h2>
-			<button id="rock"><img src="http://1000awesomethings.com/wp-content/uploads/2008/08/rock.jpg"></button>
-			<button id="paper"><img src="http://1000awesomethings.com/wp-content/uploads/2008/08/paper.jpg"></button>
-			<button id="scissors"><img src="http://1000awesomethings.com/wp-content/uploads/2008/08/scissors.jpg"></button>
-		</div>
-	</div>
+    <div class="container">
+       <div class="topbar">
+            <h4>The Word Dictionary</h4>
+       </div>
+       <div class="centerInput">
+           <div class="phrase center-ailgn">
+               <h2>Search any word under the Sun</h2>
+           </div>
+           <div class="inputField">
+               <div class="row" id="inputAndButton">
+                   <input class="col s11" type="text" id="wordInput">
+               </div>
+           </div>
+          <div class="row buttomSubmit">
+              <button class="col s4 offset-s4" id="submit">Search</button>
+          </div>
+       </div>
+    </div>
 </body>
 </html>
