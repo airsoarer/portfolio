@@ -1,0 +1,34 @@
+body{
+	margin:0px;
+}
+
+#nav{
+	color:white;
+	position:fixed;
+	position:absolute;
+	top:0px; 
+	left:0px;
+}
+
+#nav a{
+	color:white;
+}
+
+#textContent{
+	margin-top:20px;
+	text-align: left;
+	margin-left: 10px;
+}
+
+img{
+	width:400px;
+	height:200px;
+}
+
+#scarves{
+	width:500px;
+}
+
+#blankets{
+	width:500px;
+}

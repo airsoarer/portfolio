@@ -1,0 +1,80 @@
+body{
+	background-color: gray;
+	color:white;
+	margin:0px;
+	font-size:24px; 
+	font-family: 'Raleway', sans-serif;
+}
+
+#nav{
+	padding:0px;
+	margin:0px;
+}
+
+.header{
+	height: 10%;
+	width: 100%;
+	border:0px;
+	margin:0px;
+	padding:0px;
+	font-size: 12px;
+}
+
+
+
+div{
+	display: inline-block;
+}
+
+.active{
+	background-color: #02a388;	
+}
+
+li{
+	float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li:hover{
+	background-color: #02a388;	
+}
+
+.navphoto{
+	display:block;
+	float: left;
+	color: black;
+}
+
+.photo{
+	display: block;
+}
+
+ul{
+	text-decoration: none;
+	color: black;
+	margin: 0px;
+	padding: 0px;
+	position: fixed;
+	width: 100%;
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	transition-duration: 1s;
+}
+
+.h1{
+	position: absolute;
+	left: 0px;
+	top: 60px;
+}
+

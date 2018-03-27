@@ -1,0 +1,81 @@
+*{
+	color:white;
+}
+
+body{
+	color:white;
+}
+
+header{
+	padding-bottom:20px;
+	color:white;
+}
+
+#pricing{
+	text-align:center;
+	padding-top: 20px;
+	
+}
+
+#h1{
+	margin:0px;
+}
+
+ul li a{
+	color:white;
+}
+
+.condenseScarves{
+	width:100% !important;
+	height:200px !important;
+}
+
+.looseScarves{
+	width:100% !important;
+	height:200px !important;
+}
+
+.infinityScarves{
+	width:100% !important;
+	height:200px !important;
+}
+
+.grannySquare{
+	width:100% !important;
+	height:200px !important;
+}
+
+.throw{
+	width:100% !important;
+	height:200px !important;
+}
+
+#csText{
+	width:50%;
+	float:left;
+}
+
+#lsText{
+	width:50%;
+	float:right;
+}
+
+#isText{
+	width:50%;
+	float:left;
+}
+
+#gsText{
+	width:50%;
+	float:right;
+}
+
+#throwText{
+	width:50%;
+	float:left;
+}
+
+img{
+	width: 400px;
+	height: 200px;
+}
