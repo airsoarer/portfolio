@@ -40,3 +40,9 @@ hr{
     width: 10%;
     height: 25px;
 }
+
+.code{
+    font-size: 30px;
+    margin-left: 10px;
+    font-weight: bolder;
+}
