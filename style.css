@@ -4,6 +4,7 @@ body{
     padding: 0px !important;
     box-sizing: border-box;
     width: 100% !important;
+    overflow-x: hidden;
 
     /* Colors */
     --color: #FFFFFF;
@@ -22,8 +23,6 @@ body{
 
     /* Image dimensions */
     --imgheight: 200px;
-
-    /*  */
 }
 
 img{
@@ -48,7 +47,7 @@ img{
 .photo{
     background-image: url("code.PNG");
     background-size: cover;
-    /* width: 100vw; */
+    width: 100vw;
     height: 100vh;
 }
 
@@ -120,6 +119,15 @@ img{
     font-size: var(--paraText);
 }
 
+.skill::after{
+    content: '';
+    background-color: black;
+    height: 2px;
+    width: 100px;
+    display: block;
+    margin-top: 5px;
+}
+
 .project{
     margin-bottom: 80px;
 }
@@ -157,6 +165,7 @@ footer{
     padding-bottom: var(--sectionSpace);
     margin: 0px !important;
     color: var(--color);
+    width: 100vw;
 }
 
 li{
