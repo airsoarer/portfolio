@@ -157,14 +157,14 @@ div{
     font-size: var(--paraText);
     font-weight: 600;
     background-color: white;;
-    box-shadow: 2px 2px 10px #5b5b5b5b;
+    box-shadow: 1px 1px 5px #5b5b5b5b;
     /* color: var (var(--color)); */
 }
 
 .project a:hover{
     transition: 1s;
     /* text-shadow: 1px 1px 1px var(--accentColor); */
-    box-shadow: 2px 8px 10px #5b5b5b5b;
+    box-shadow: 2px 4px 10px #5b5b5b5b;
 }
 
 /* .project a:active{
