@@ -33,6 +33,50 @@ div{
     margin-right: 0px !important;
 }
 
+input{
+    border: none !important;
+    box-shadow: inset 0px 1px 5px lightslategray !important;
+    font-size: 24px;
+}
+
+textarea{
+    height: 150px;
+    box-shadow: inset 0px 1px 5px lightslategray !important;
+
+}
+
+label{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+button{
+    background-color: #1b1b1b;
+    color: white;
+    height: 50px;
+    border:none;
+    font-size: 24px;
+}
+
+.modal-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sendEmail{
+    margin-bottom: 50px !important;
+}
+
+.sendEmail button{
+    margin-top: 10px;
+}
+
+.sendEmail button:focus{
+    background-color: #1b1b1b;
+    box-shadow: 0 2px 5px lightslategray;
+}
+
 .languages{
     text-align: center;
     padding-bottom: var(--sectionSpace);
