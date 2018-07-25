@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Slot Machine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="../css/slot.css">
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="../js/slot.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h3>The Slot Machine</h3>
+        <h5 id="money">$0</h5>
+        <div class="row machine">
+            <div class="col s3 offset-s2 m3 offset-m2 box">
+                <img id="one" src="../photos/seven.jpg" class="center-align">
+            </div>
+            <div class="col s3 m3 box">
+                <img id="two" src="../photos/lemon.png" class="center-align">
+            </div>
+            <div class="col s3 m3 box">
+                <img id="three" src="../photos/cherries.jpg" class="center-align">
+            </div>
+        </div>
+        <div class="row buttton">
+            <button class="col s12 m8 offset-m2" id="spin">SPIN</button>
+        </div>
+        <div id="win" class="hide">
+            <h1>You Win</h1>
+        </div>
+    </div>
+</body>
+</html>
