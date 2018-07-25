@@ -159,7 +159,7 @@ button{
 }
 
 .name h1::after{
-    content: "Web Developer";
+    content: "Freelance Web Developer";
     display:block;
     font-size: 35px;
 }
