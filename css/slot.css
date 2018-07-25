@@ -1,0 +1,31 @@
+body{
+    box-sizing: border-box;
+}
+
+button{
+    height: 75px;
+    border:none;
+    background-color: #5b5b5b;
+    color: white;
+    font-size: 30px;
+}
+
+img{
+    height: 180px;
+}
+
+button:focus{
+    background-color: #5b5b5b;
+}
+
+button:active{
+    box-shadow: 0 2px 5px lightslategray;
+}
+
+.box{
+    /* border: solid black 2px; */
+}
+
+.machine{
+   margin-top: 100px;
+}
