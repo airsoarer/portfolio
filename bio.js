@@ -5,8 +5,10 @@
             $(".wrapper").addClass("animateWrapper");
             $('.wrapper').css("display", 'block');
             $('footer').css('display', "block");
+            $('body').addClass('spinnerBackground');
         }, 2000);
 
+        $('body').addClass('spinnerBackground');
         $('.spinner').css('display', "block");
         init();
     });

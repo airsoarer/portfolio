@@ -66,6 +66,15 @@ button{
     .spinner{
         margin-top: 80% !important;
         margin-left: 45% !important;
+        /* background-color: var(--footerColor) !important; */
+    }
+
+    /* .skills{
+        text-align: center;
+    } */
+
+    .content a{
+        text-align: center;
     }
 }
 
@@ -106,6 +115,10 @@ footer{
 
 .animateWrapper{
     animation: wrapper 1s;
+}
+
+.spinnerBackground{
+    background-color: #1b1b1b;
 }
 
 .spinner {
@@ -276,6 +289,7 @@ footer{
     width: 100px;
     display: block;
     margin-top: 5px;
+    /* transform: translateX(50px); */
 }
 
 .title{
