@@ -58,6 +58,100 @@ button{
     font-size: 24px;
 }
 
+@media screen and (max-width: 600px){
+    .project{
+        text-align: center;
+    }
+
+    .spinner{
+        margin-top: 80% !important;
+        margin-left: 45% !important;
+    }
+}
+
+::-webkit-scrollbar{
+    height: 5px;
+    width: 8px;
+    /* width: 5px !important; */
+}
+
+::-webkit-scrollbar-track{ 
+    /* box-shadow: inset 0 5px 6px #1b1b1b; */
+    background-color: #1b1b1b;
+}
+
+::-webkit-scrollbar-thumb{
+    /* background-color: var(--baseColor); */
+    background-color: var(--accentColor);
+    border-radius: 5px;
+}
+
+.wrapper{
+    display: none;
+}
+
+footer{
+    display: none;
+}
+
+@keyframes wrapper{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.animateWrapper{
+    animation: wrapper 1s;
+}
+
+.spinner {
+    /* margin: 100px auto 0; */
+    margin-left: 50%;
+    margin-top: 24%;
+    width: 70px;
+    text-align: center;
+  }
+  
+  .spinner > div {
+    width: 18px;
+    height: 18px;
+    background-color: #333;
+  
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  }
+  
+  .spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+  }
+  
+  .spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+  }
+  
+  @-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0) }
+    40% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bouncedelay {
+    0%, 80%, 100% { 
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    } 40% { 
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+    }
+  }
+
 .modal-content{
     display: flex;
     justify-content: center;
@@ -66,6 +160,7 @@ button{
 
 .sendEmail{
     margin-bottom: 50px !important;
+    /* margin-top: 50px !important; */
 }
 
 .sendEmail button{
@@ -183,6 +278,10 @@ button{
     margin-top: 5px;
 }
 
+.title{
+    margin-bottom: 50px;
+}
+
 .project{
     margin-bottom: 80px;
 }
@@ -208,7 +307,7 @@ button{
 .project a:hover{
     transition: 1s;
     /* text-shadow: 1px 1px 1px var(--accentColor); */
-    box-shadow: 2px 4px 10px #5b5b5b5b;
+    box-shadow: 2px 4px 5px #5b5b5b5b;
 }
 
 /* .project a:active{

@@ -39,6 +39,11 @@
     <script src="bio.js"></script>
 </head>
 <body>
+    <div class="spinner">
+        <div style="background-color: #63D488" class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div style="background-color: #63D488" class="bounce3"></div>
+    </div>
     <div class="row wrapper">
         <div class="col s12 m12 l12 photo">
             <div class="name">
@@ -92,6 +97,10 @@
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAh1BMVEX////wUDPwSSnvRiTwTS/4sqj5vLLvQhvyalT++Pfyb1r4uK7wSyn97Or+8vDwTC76y8T+9vXxVDf71c/82tT2nY/yZ1Dyb1v6zMX1jHz0hHP5v7fvRCD5w7v70cv0fmvxWT796OT0gm/zd2T1l4n3q5/xYUj84d33pJf2mov1kYPxVzzvPBPfXOQ5AAAKd0lEQVR4nO1da3fqKhCVBLXxlaqtvWps1bbqac///33XR9USJxkGGBK8d3/sWkW2MzAb2GCj4Q3J+LkzEkJsZq2Vv0/1h6Q5iSIpDkjj0XRbdX+cY/sQp+ICGYld1T1yjPlvfke035KqO+US3Z4UeUSdftXdcodFfEtwT/FhWHXHXGHRBvgdKQ6q7pobdGOY4IHiXSTqHBiD17F4B1FctIsJHqIY/IzaLRiDF4qTwBO1m5ZF8EjxJWiK5Sl6jmLAiTpHUvQ8FoOdbro9HYIBqxtYydxRFIuUDEwxQAFXrGRgisEl6hwtEzmKoambR40ykY9iUEWjRRiDF4ohqRtcyYAUwykaOkoGjmIgiaqnZECKYdTFV8MIHikGkajDKakS5ikGEcVZZkExDHUzs4liGOrGLlFDoJjYJWoQReP/RC2nGEaiWlH8L8yotauLY+Bvd5Wo8+z59o92iVovdbNfTcQARUt1U6Oi0T0QaYMUbaJYnyVx67TgjaGj+bsYi5c9GShR7dRNPZbEv/Zk3CdqHYqGsicDTjeBJ+oiU1b0kfOiUbW6udm6h+qiZdGoNFGBrXuYYqgrDdCE4D5Rq1M3BadL96NuCk0I96JuSrbui4uGTKPIYMu/EjtD6ekSqG6m7SjdvE+n75v07DTVp+hf3SBb9+CM2nz9mTKGr7tlRjxf9F00IDslTvEXktaENjA9qxsNEwJUNBQMnmmp6lXdaJkQsCgeznDyxuG6UNQ0IYBFQ8FqQ6ToKVHL7JQKwKKh4GlES1Q/6oZgQsApLv5SGPpRN5idUgGeqH8iGkV+dUM0IaBRHAhiXeRWN2QTAlo0nol6lVnd0E0IMkYmh9WS+p1xqhtdO+Xv/sywRmfURhnVjb6d8opsgbVKs/gdKXJFkWKnvGCEXlJb0QrGiSKLuumarNIlPrsPDJplUTctI69a+oLOfMOJQcMM6oZupzwxfENbTjokcXqm6FrdmNgpjwzfcYYvJgxdqxszO+WBYQedE4YbQyejy6JhaqfczzQbfKYx3YRzqG7M7ZRC9J6w1sfVmzW7NPmvIm5izT+bN+8oURfUnT8FaQdrv/INfyMl87sTmKgZdCxyxIG6MVIySh+m6GfYUbRMVDMloyBDleng3Yai3Vg0VDJqF/CnBQYvVlG0KBqmSkYFvnG6V27VJKqxksl3Aa0YjWElibogHp4Uo91CP8xuLJrNqLZlQqH4B/24od1YNKiLVkrmtgtLyJ6pIPGcqHMrJXOLNFqjpd+OIjGKLlP0B211vgFGjqW6IRUN0ta9JnIavAlNsFYUKUtiB0rmFjmGrb/d2w/2pW5cKJlb5BlmkXOKuktimwVvCfIMYwFFMfFQNFwpmTxuGYoMoDh85zZrmmzdawFgKHvOExVXNwxl4gcAw4Io2hUNJFHpxyTaABmKtvuxWJqo2iYEA8AMhftELVM3fCkqChlKsGgwqRsOJXNFAUMBFg0edcNVJn5QyFAUln4ZxXFs4NYssDOYb93roZhhQdHI5Ga2azaf18vezbuSCEB1w6RkrihmWDCjLi6lbdvs/KVxBIoGaqe0RhlDsC4qeO1YmjXZlMwVpQzBoqGG9JM2HnNRZC0TPyhnKNEoNsaZuVmTUclcUc6woGgoMDdrciqZKzCGYNHIRZFq1vyZUbf8Y/AAlCGoblTMiWbN9fG/kgcjpwAZKEOdRJ3SpE778/BPTR+DUGgxFDFGcUWLhjxYspKJnxBqMQTVjU0Q44/96HW6t132YRoMRbpBGG5pc4Zc9m2MAjRoMczmCMPGOy3lskWj42UiFZoMBXpgvCMawz8aIxe914HWOMS3Ax9pxgLZabjpvgZ0GGoY/QZEO+qoXgw1jBtkO2rNGOInqQOactsz3Djpvga0GH5pMCR9qpw0Zp4Kvt44XOMMaQu9dFY0a7uHFkPcNP1EY7j/1BU1r02hVS2+0Xr4SYzIlqz0jKFV8eNHjOGaNKqOLuytGwIotBiiV2yIl4iy4ze287BJI3RVm0REDW2t97MEbrx5yVM9hlH5ryQlpFkjHf18X1bnINrQYyii0t/z+qT0VI4uNqX+gweKugzLSuKWkqNS/pq2hh4oajIUWXGeDij7EbKnGM0G/BR1GYpekVmTZO6TMuek67OPRW2GRWZN0uG3HN1UVvYo6jMU7S9AvD1tKASjV+ArmvBSJDAU0fcix3Hw1SONQfCqTt/GAoGDwlDI+KV7PVhJVs8b0iw6+gciuKfIGkUSw321zsTs83Hc3752dy9t0sGD7BUQPGzwM1IkMtyjF2dZu53FEXGju+w2Gae6oTM0gxwBk8yvROWLoieGUiALML6i4YdhTslAYBNwXhjeKBkwUZnGog+GgJKBwJSoHhiCSgYCj7rhZ1haJlSwJCo7w0IlA1JkiCI3Q9nTGoNnMKgbZoaEFD3BvbrhZSiF5iRzhfOxmHEyRJUMGEW3iRr31NeGuvSHd4qhoWQguFQ3aW+XuwiRfAhnp14yNSLoMlGjDtCFsatvUFPJgBQd9SFbgzdZhm9OxqLskSeZK9wUjbjwdN7m+eQzyGVChYtEjYoNFkP7IxOSkgEpWkdRbkpOIvr0N+5yrafGY/AM6xm1XdqFuV2eWqboCZbqBjMBWblbpTAsEyrsxmKEZNGjRRCNlAwEG3Ujv5HGhw/GTgmrMqHCYkkM/ryOgg/Ttp2MwTPMEzVGB8o/hq8YWSgZkKJhFOUSf2HIjGHJ1r0ZDNVNit88NntzT0YOU/QEs6KhYeMyehkS2bo3g5G6SdFHdo0YKiYEdzBRNzwxNFzw4jCoixrG7cE3dRw6UjIQ6EVDw2xInksdl4lcb8hRxOsh0XzvUslAIKub6ANr8ovWolMlA4FqZ5BLpMEB7aFk6wWvBkViFGOkRwvS2sK5koFAVDfpQ3lzJEXDoGQgENVNVvrgHukKMouSgUBTN3JZsk+zovy8BZOSgUBTNyVvjQwoexhsSsYBxSJTrJ2dkhc0dZPNQO1GepiVVcmAvSNFMd4A3//r0tZOyQuaukmzr9x8s51R3p5kVzIQiOomXk7Hl/X+cDwd0Vz3Hgo9QJGmbmTU3sw+u91uazddtmn/6kPJQCDv3RxfRTo8jES8cl5Fip7g5yqKNyUDwcdVFGdb92bgv6fhVclA4L5t41nJQOC9iuJdyUDgTNQKlAwEvqsoFZYJFVyJWpGSgcBzFYVop+QFx1WU2qToCe7VjYGdkheux2LFSgaC26JRuZKB4FLdyLRWY/AMd4laCyUDwdVKo7IFLw43RaNmZUKFi0StdMGLw4FZ095OyQvbGbWWZUKFnbphNCG4g81YrKGSgWCubphNCO5guiSudZlQYZaotVUyEEyWxDVWMhDo6saTCcEdqEWj5koGAtHO4M+E4A6UH24KQMmA0L7UFISSgZBo3r4Lqkyo0KMYjJIBoZGoASkZCMkao1ijrXszYIkamJIBUUoxOCUDoSxRA1QyEIoTNUglA6KAYqhKBgJYNGpgQnCHZH0bxTRcJQMhWed/ty4a3VEEj/gc/X77MM3WBr+GXnOs/iyzo2VPprF4v6sMvaC/+OiMhJjMmuh1L4f4F/NCwIMA1ynxAAAAAElFTkSuQmCC">
                 <h4>Git</h4>
             </div>
+            <div class="col s12 m4 l4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Android_Studio_icon.svg/512px-Android_Studio_icon.svg.png">
+                <h4>Android Studio <br>(Android App Development)</h4>
+            </div>
         </div>
         <div class="col s12 m12 l12 photoTwo">
             <h3 id="skillsTitle">Skills</h3>
@@ -115,133 +124,133 @@
             </div>
         </div>
         <div class="col row projects">
-            <div class="col s12 m12 l12">
+            <div class="col s12 m12 l12 title">
                 <h3 id="projectTitle">My Projects</h3>
-            </div>
-            <!-- First Bio -->
-            <div class="col s12 m4 l4 project">
-                <img src="firstBio.PNG">
-                <h4>First Bio Page</h4>
-                <p>The first web site I created and first one I created participating in the South Bend Code School</p>
-                <a class="col s4 center-align" target="_blank" href="https://southbendcodeschool.com/student_sites/Open-Enrollment-12-15-2016/Matt/index.html">View Project</a>
-            </div>
-            <!-- Michiality -->
-            <div class="col s12 m4 l4 project">
-                <img src="michiality.PNG">
-                <h4>Michiality</h4>
-                <p>A web app I created with a group in the South Bend Code Schools' Fundementals of Web Development. It helps tourists and locals find places to go in the Michiana area based on a personality test.</p>
-                <a class="col s4 center-align" target="_blank" href="http://m.southbendcodeschool.com/">View Project</a>
-            </div>
-            <!-- SB Pollution Awareness -->
-            <div class="col s12 m4 l4 project">
-                <img src="sbpollution.PNG">
-                <h4>SB Pollution Awareness</h4>
-                <p>A web app I created for a group project I was working on in Innovative Thinkers Camp, a program put on by the Notre Date Trio program. It infroms people about littering and water pollution around the St. Joseph River.</p>
-                <a class="col s4 center-align" target="_blank" href="http://sbpollutionawareness.ml/">View Project</a>
-            </div>
-            <!-- Landscaping Life -->
-            <div class="col s12 m4 l4 project">
-                <img src="landscapingLife.PNG">
-                <h4>Landscaping Life</h4>
-                <p>A website showcasing my Photography work.</p>
-                <a class="col s4 center-align" target="_blank" href="http://landscapinglife.ml/">View Project</a>
-            </div>
-            <!-- MW Crochet -->
-            <div class="col s12 m4 l4 project">
-                <img src="crochet.PNG">
-                <h4>MW Crochet</h4>
-                <p>A website showcasing my Crochet work.</p>
-                <a class="col s4 center-align" target="_blank" href="https://airsoarer.github.io/mwcrochet-/home.html">View Project</a>
-            </div>
-            <!-- Health Jepardy -->
-            <div class="col s12 m4 l4 project">
-                <img src="jeopardy.PNG">
-                <h4>Health Jeopardy</h4>
-                <p>A web app I created for a Health class project.</p>
-                <a class="col s4 center-align" target="_blank" href="https://airsoarer.github.io/health_jeapordy/">View Project</a>
-            </div>
-            <!-- MyLists -->
-            <div class="col s12 m4 l4 project">
-                <img src="myLists.PNG">
-                <h4>MyLists</h4>
-                <p>A to-do list web app that adds in a totalling functonallity when working with a shoping list.</p>
-                <a class="col s4 center-align" target="_blank" href="https://airsoarer.github.io/MyLists/login.html">View Project</a>
-            </div>
-            <!-- The Work Dictionary -->
-            <div class="col s12 m4 l4 project">
-                <img src="wordSearch.PNG">
-                <h4>The Word Dictionary</h4>
-                <p>A dictionary web app using the Worknik API.</p>
-                <a class="col s4 center-align" target="_blank" href="https://airsoarer.github.io/portfolio/wordSearchHome.html">View Project</a>
-            </div>
-            <!-- Spanish Jeopardy -->
-            <div class="col s12 m4 l4 project">
-                <img src="spanish.PNG">
-                <h4>Spanish Jeopardy</h4>
-                <p>A dictionary web app I created for my Spainsh teacher in eight grade to aid her in the teaching and review of Spanish.</p>
-                <a class="col s4 center-align" target="_blank" href="https://airsoarer.github.io/Spanish-Jeopardy/student.html">View Project</a>
-            </div>
-            <!-- Time -->
-            <div class="col s12 m4 l4 project">
-                <img src="time.PNG">
-                <h4>Time</h4>
-                <p>A realtime updating clock web app.</p>
-                <a class="col s4 center-align" target="_blank" href="https://airsoarer.github.io/portfolio/time.html">View Project</a>
-            </div>
-            <!-- Music Boxes -->
-            <div class="col s12 m4 l4 project">
-                <img src="musicBoxes.PNG">
-                <h4>Music Boxes</h4>
-                <p>A web app with different soud affects.</p>
-                <a class="col s4 center-align" target="_blank" href="https://airsoarer.github.io/portfolio/boxes.html">View Project</a>
-            </div>
-            <!-- Guess the Number -->
-            <div class="col s12 m4 l4 project">
-                <img src="guessTheNumber.PNG">
-                <h4>Guess the Number</h4>
-                <p>A web game where you guess the number in three different rounds.</p>
-                <a class="col s4 center-align" target="_blank" href="https://airsoarer.github.io/portfolio/guess.html">View Project</a>
-            </div>
-            <!-- Rock, Paper, Scissors -->
-            <div class="col s12 m4 l4 project">
-                <img src="RPS.PNG">
-                <h4>Rock, Paper, Scissors</h4>
-                <p>A Rock, Paper, Scissors game.</p>
-                <a class="col s4 center-align" target="_blank" href="https://airsoarer.github.io/portfolio/RPS.html">View Project</a>
-            </div>
-            <!-- Calculator -->
-            <div class="col s12 m4 l4 project">
-                <img src="calculator.PNG">
-                <h4>Simple Calculator</h4>
-                <p>A Calculator web app.</p>
-                <a class="col s4 center-align" target="_blank" href="https://airsoarer.github.io/portfolio/calculator.html">View Project</a>
-            </div>
-            <!-- Slot Machine -->
-            <div class="col s12 m4 l4 project">
-                <img src="slotMachine.PNG">
-                <h4>Slot Machine</h4>
-                <p>A slot machine app</p>
-                <a href="https://airsoarer.github.io/portfolio/html/slot.html" target="_blank" class="col s4 center-align">View Project</a>
-            </div>
-            <!-- Coin flip -->
-            <div class="col s12 m4 l4 project">
-                <img src="coinFlip.PNG">
-                <h4>Coin Flip</h4>
-                <p>A coin flipping app</p>
-                <a class="col s4 center-align" href="https://airsoarer.github.io/portfolio/html/flip.html" target="_blank">View Project</a>
-            </div>
-            <!-- Tic Tac Toe -->
-            <div class="col s12 m4 l4 project">
-                <img src="ttt.PNG">
-                <h4>Tic Tac Toe</h4>
-                <p>A tic tac toe app</p>
-                <a href="https://airsoarer.github.io/portfolio/html/ttt.html" class="col s4 center-align" target="_blank">View Project</a>
             </div>
             <!-- Code Works Site -->
             <div class="col s12 m4 l4 project">
                 <img src="codeWorks.PNG">
                 <h4>Code Works' Project Tracker</h4>
                 <p>A web application I worked on for the Code Works Development Shop in South Bend IN to help track their projects</p>
+            </div>
+            <!-- Tic Tac Toe -->
+            <div class="col s12 m4 l4 project">
+                <img src="ttt.PNG">
+                <h4>Tic Tac Toe</h4>
+                <p>A tic tac toe app</p>
+                <a href="https://airsoarer.github.io/portfolio/html/ttt.html" class="col s10 offset-s1 m4 center-align" target="_blank">View Project</a>
+            </div>
+            <!-- Coin flip -->
+            <div class="col s12 m4 l4 project">
+                <img src="coinFlip.PNG">
+                <h4>Coin Flip</h4>
+                <p>A coin flipping app</p>
+                <a class="col s10 offset-s1 m4 center-align" href="https://airsoarer.github.io/portfolio/html/flip.html" target="_blank">View Project</a>
+            </div>
+            <!-- Slot Machine -->
+            <div class="col s12 m4 l4 project">
+                <img src="slotMachine.PNG">
+                <h4>Slot Machine</h4>
+                <p>A slot machine app</p>
+                <a href="https://airsoarer.github.io/portfolio/html/slot.html" target="_blank" class="col s10 offset-s1 m4 center-align">View Project</a>
+            </div>
+            <!-- Calculator -->
+            <div class="col s12 m4 l4 project">
+                <img src="calculator.PNG">
+                <h4>Simple Calculator</h4>
+                <p>A Calculator web app.</p>
+                <a class="col s10 offset-s1 m4 center-align" target="_blank" href="https://airsoarer.github.io/portfolio/calculator.html">View Project</a>
+            </div>
+            <!-- Rock, Paper, Scissors -->
+            <div class="col s12 m4 l4 project">
+                <img src="RPS.PNG">
+                <h4>Rock, Paper, Scissors</h4>
+                <p>A Rock, Paper, Scissors game.</p>
+                <a class="col s10 offset-s1 m4 center-align" target="_blank" href="https://airsoarer.github.io/portfolio/RPS.html">View Project</a>
+            </div>
+            <!-- Guess the Number -->
+            <div class="col s12 m4 l4 project">
+                <img src="guessTheNumber.PNG">
+                <h4>Guess the Number</h4>
+                <p>A web game where you guess the number in three different rounds.</p>
+                <a class="col s10 offset-s1 m4 center-align" target="_blank" href="https://airsoarer.github.io/portfolio/guess.html">View Project</a>
+            </div>
+            <!-- Music Boxes -->
+            <div class="col s12 m4 l4 project">
+                <img src="musicBoxes.PNG">
+                <h4>Music Boxes</h4>
+                <p>A web app with different soud affects.</p>
+                <a class="col s10 offset-s1 m4 center-align" target="_blank" href="https://airsoarer.github.io/portfolio/boxes.html">View Project</a>
+            </div>
+            <!-- Time -->
+            <div class="col s12 m4 l4 project">
+                <img src="time.PNG">
+                <h4>Time</h4>
+                <p>A realtime updating clock web app.</p>
+                <a class="col s10 offset-s1 m4 center-align" target="_blank" href="https://airsoarer.github.io/portfolio/time.html">View Project</a>
+            </div>
+            <!-- Spanish Jeopardy -->
+            <div class="col s12 m4 l4 project">
+                <img src="spanish.PNG">
+                <h4>Spanish Jeopardy</h4>
+                <p>A dictionary web app I created for my Spainsh teacher in eight grade to aid her in the teaching and review of Spanish.</p>
+                <a class="col s10 offset-s1 m4 center-align" target="_blank" href="https://airsoarer.github.io/Spanish-Jeopardy/student.html">View Project</a>
+            </div>
+            <!-- The Work Dictionary -->
+            <div class="col s12 m4 l4 project">
+                <img src="wordSearch.PNG">
+                <h4>The Word Dictionary</h4>
+                <p>A dictionary web app using the Worknik API.</p>
+                <a class="col s10 offset-s1 m4 center-align" target="_blank" href="https://airsoarer.github.io/portfolio/wordSearchHome.html">View Project</a>
+            </div>
+            <!-- MyLists -->
+            <div class="col s12 m4 l4 project">
+                <img src="myLists.PNG">
+                <h4>MyLists</h4>
+                <p>A to-do list web app that adds in a totalling functonallity when working with a shoping list.</p>
+                <a class="col s10 offset-s1 m4 center-align" target="_blank" href="https://airsoarer.github.io/MyLists/login.html">View Project</a>
+            </div>
+            <!-- Health Jepardy -->
+            <div class="col s12 m4 l4 project">
+                <img src="jeopardy.PNG">
+                <h4>Health Jeopardy</h4>
+                <p>A web app I created for a Health class project.</p>
+                <a class="col s10 offset-s1 m4 center-align" target="_blank" href="https://airsoarer.github.io/health_jeapordy/">View Project</a>
+            </div>
+            <!-- MW Crochet -->
+            <div class="col s12 m4 l4 project">
+                <img src="crochet.PNG">
+                <h4>MW Crochet</h4>
+                <p>A website showcasing my Crochet work.</p>
+                <a class="col s10 offset-s1 m4 center-align" target="_blank" href="https://airsoarer.github.io/mwcrochet-/home.html">View Project</a>
+            </div>
+            <!-- Landscaping Life -->
+            <div class="col s12 m4 l4 project">
+                <img src="landscapingLife.PNG">
+                <h4>Landscaping Life</h4>
+                <p>A website showcasing my Photography work.</p>
+                <a class="col s10 offset-s1 m4 center-align" target="_blank" href="http://landscapinglife.ml/">View Project</a>
+            </div>
+            <!-- SB Pollution Awareness -->
+            <div class="col s12 m4 l4 project">
+                <img src="sbpollution.PNG">
+                <h4>SB Pollution Awareness</h4>
+                <p>A web app I created for a group project I was working on in Innovative Thinkers Camp, a program put on by the Notre Date Trio program. It infroms people about littering and water pollution around the St. Joseph River.</p>
+                <a class="col s10 offset-s1 m4 center-align" target="_blank" href="http://sbpollutionawareness.ml/">View Project</a>
+            </div>
+            <!-- Michiality -->
+            <div class="col s12 m4 l4 project">
+                <img src="michiality.PNG">
+                <h4>Michiality</h4>
+                <p>A web app I created with a group in the South Bend Code Schools' Fundementals of Web Development. It helps tourists and locals find places to go in the Michiana area based on a personality test.</p>
+                <a class="col s10 offset-s1 m4 center-align" target="_blank" href="http://m.southbendcodeschool.com/">View Project</a>
+            </div>
+            <!-- First Bio -->
+            <div class="col s12 m4 l4 project">
+                <img src="firstBio.PNG">
+                <h4>First Bio Page</h4>
+                <p>The first web site I created and first one I created participating in the South Bend Code School</p>
+                <a class="col s10 offset-s1 m4 center-align" target="_blank" href="https://southbendcodeschool.com/student_sites/Open-Enrollment-12-15-2016/Matt/index.html">View Project</a>
             </div>
             <!-- Python and All projects -->
             <div class="col s12 m4 l4 all">

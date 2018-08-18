@@ -1,5 +1,15 @@
 (function(){
-    $(document).ready(init);
+    $(document).ready(function(){
+        setTimeout(function(){
+            $('.spinner').css("display", "none");
+            $(".wrapper").addClass("animateWrapper");
+            $('.wrapper').css("display", 'block');
+            $('footer').css('display', "block");
+        }, 2000);
+
+        $('.spinner').css('display', "block");
+        init();
+    });
 
     function init(){
         $('#send').on('click', sendEmail);
