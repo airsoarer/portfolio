@@ -5,7 +5,7 @@
             $(".wrapper").addClass("animateWrapper");
             $('.wrapper').css("display", 'block');
             $('footer').css('display', "block");
-            $('body').addClass('spinnerBackground');
+            $('body').removeClass('spinnerBackground');
         }, 2000);
 
         $('body').addClass('spinnerBackground');
