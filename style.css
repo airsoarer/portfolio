@@ -6,6 +6,8 @@ body{
     /* width: 100% !important; */
     overflow-x: hidden;
 
+    position: relative;
+
     /* Colors */
     --color: #FFFFFF;
     --accentColor: #63d488;
@@ -202,11 +204,6 @@ footer{
     padding: 0px !important;
 }
 
-.i{
-    backgroumd-color: white;
-    border-radius: 200px;
-}
-
 .wrapper{
     width: 100vw;
     /* width: 100%; */
@@ -275,6 +272,63 @@ footer{
     content: "Freelance Web Developer";
     display:block;
     font-size: 35px;
+}
+
+.i{
+    color: var(--accentColor);
+    background-color: white;
+    /* border-radius: 80px; */
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.i:focus{
+    background-color: white;
+}
+
+.notifyBtn{
+    position: relative;
+}
+
+@keyframes notifyBox{
+    0%{
+        width: 0px;
+    }
+
+    80%{
+        width: 480px;
+    }
+
+    100%{
+        width: 420px;
+    }
+}
+
+.on{
+    display: block;
+    animation: notifyBox .5s ease-in;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* border-radius: 80px; */
+    height: 50px;
+    width: 420px;
+}
+
+.off{
+    display: none;
+}
+
+.notifyContainer a{
+    color: var(--accentColor);
+    font-weight: 700;
 }
 
 .about{
@@ -392,6 +446,12 @@ li a{
     transform: translateX(99%);
     /* position: fixed; */
 }
+
+/* .social div::before{
+    content: ".";
+    color: var(--accentColor);
+    background-color: transparent;
+} */
 
 .social:hover{
     transform: translateX(-50%);

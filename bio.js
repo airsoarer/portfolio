@@ -15,7 +15,14 @@
 
     function init(){
         $('#send').on('click', sendEmail);
+        $("#info").on('click', notify);
         // $('.modal').modal();
+    }
+
+    function notify(){
+        $('.notifyContainer').addClass("on");
+        $('.notifyContainer').removeClass("off")
+        $('.notifyContainer').toggle();
     }
 
     function sendEmail(){
