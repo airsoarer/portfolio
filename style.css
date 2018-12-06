@@ -124,6 +124,14 @@ footer{
     }
 }
 
+.articleRow{
+    margin-bottom: 50px;
+}
+
+.article{
+    height: auto !important;
+}
+
 .animateWrapper{
     animation: wrapper 1s;
 }
