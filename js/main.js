@@ -8,6 +8,7 @@
         $(".contactBtn").on("click", contact);
         $("#send").on("click", sendEmail);
         $("#downArrow").on("click", scroll);
+        $(".sidenav").sidenav();
 
         $(".modal").modal();
         // $(".modal").modal("open");
