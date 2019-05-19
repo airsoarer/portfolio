@@ -330,3 +330,17 @@ footer button:hover {
     color: white;
     box-shadow: 0 0 0px #555555;
 }
+
+.sidenav {
+    background-color: #1a1a1a;
+    padding-top: 20px;
+}
+
+.sidenav button {
+    color: white;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    font-weight: 100;
+    font-size: 18px;
+}
