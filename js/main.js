@@ -5,6 +5,7 @@
         // $(".navBtn").on("click", change);
         $(".homeBtn").on('click', home);
         $(".workBtn").on("click", work);
+        $(".testamonialBtn").on("click", testamonials);
         $(".contactBtn").on("click", contact);
         $("#send").on("click", sendEmail);
         $("#downArrow").on("click", scroll);
@@ -23,20 +24,30 @@
     function home(){
         $(".home").css("display", "block");
         $(".work").css("display", "none");
+        $(".testamonial").css("display", "none");
         $(".contact").css("display", "none");
     }
 
     function work(){
         $(".home").css("display", "none");
         $(".work").css("display", "block");
+        $(".testamonial").css("display", "none");
         $(".contact").css("display", "none");
 
         $("footer").css("padding-top", "75px !important");
     }
 
+    function testamonials(){
+        $(".home").css("display", "none");
+        $(".work").css("display", "none");
+        $(".testamonial").css("display", "block");
+        $(".contact").css("display", "none");
+    }
+
     function contact(){
         $(".home").css("display", "none");
         $(".work").css("display", "none");
+        $(".testamonial").css("display", "none");
         $(".contact").css("display", "block");
     }
 
