@@ -150,6 +150,13 @@ footer button:hover {
     color: white;
 }
 
+.testamonial {
+    display: none;
+    background-color: #1b1b1b;
+    padding-bottom: 75px !important;
+    color: white;
+}
+
 #sent {
     display: none;
     margin-top: 50px;
@@ -193,6 +200,16 @@ footer button:hover {
 .modalText {
     padding-top: 75px !important;
     font-size: 18px;
+}
+
+.testamonial {
+    font-size: 18px;
+    margin-bottom: 0px !important;
+}
+
+.testamonial h4 {
+    border-left: 2px white solid;
+    padding-left: 20px;
 }
 
 .project img:hover {
